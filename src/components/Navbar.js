@@ -5,17 +5,19 @@ const NavWrapper = styled.header`
     padding: 18px;
     font-size: 1.1rem;
     font-weight: bold;
-    color: #777;
-    background-color: #1a2634;
+    color: ${props => props.theme.primary};
+    background-color: ${props => props.theme.tertiary};
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    border-bottom: 1px solid ${props => props.theme.border};
 `;
 
 const ChangeThemeBtn = styled.button`
     outline: none;
-    color: #0d1219;
-    background-color: #26d9ca;
+    font-weight: inherit;
+    color: ${props => props.theme.secondary};
+    background-color: ${props => props.theme.quaternary};
     border: none;
     border-radius: 4px;
     padding: .5rem 1rem;

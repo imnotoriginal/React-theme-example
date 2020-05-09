@@ -2,7 +2,8 @@ import React from "react";
 import styled from "styled-components";
 
 const ArticleWrapper = styled.div`
-    color: #30475e;
+    color: ${props => props.theme.primary};
+    padding-bottom: 24px;
 `;
 
 const Title = styled.h2`
@@ -19,7 +20,9 @@ const Text = styled.p`
 
 const Example = styled.pre`
     padding: 12px;
-    background-color: #f2a365;
+    border-radius: 4px;
+    background-color: ${props => props.theme.secondary};
+    overflow-y: auto;
 `
 
 export default ({ title, text, example }) => (
