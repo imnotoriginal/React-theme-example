@@ -23,6 +23,21 @@ const Example = styled.pre`
     border-radius: 4px;
     background-color: ${props => props.theme.secondary};
     overflow-y: auto;
+
+    &::-webkit-scrollbar {
+        height: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: inherit;
+        border-radius: 4px;
+        border-radius: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: 4px;
+        background-color: ${props => props.theme.hightlight};
+    }
 `
 
 export default ({ title, text, example }) => (

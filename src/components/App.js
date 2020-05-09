@@ -17,7 +17,8 @@ const themes = {
     secondary: "#f9fafa",
     tertiary: "#fff",
     quaternary: "#3b49df",
-    highlight: "#fff",
+    background: "#fff",
+    hightlight: "rgba(0,0,0, 0.2)",
     border: "rgba(0,0,0,0.1)"
   },
   black: {
@@ -25,7 +26,8 @@ const themes = {
     secondary: "#0d1219",
     tertiary: "#1a2634",
     quaternary: "#26d9ca",
-    highlight: "rgba(255,255,255, 0.1)",
+    background: "rgba(255,255,255, 0.1)",
+    hightlight: "rgba(255,255,255, 0.2)",
     border: "inherit"
   }
 }
@@ -47,12 +49,16 @@ const GlobalStyle = createGlobalStyle`
 `
 
 const Container = styled.main`
-  width: 768px;
+  width: 920px;
   margin: 24px auto;
   border-radius: 4px;
   padding: 8px 24px;
   font-family: sans-serif;
-  background-color: ${props => props.theme.highlight};
+  background-color: ${props => props.theme.background};
+
+  @media (max-width: 968px) {
+    width: 768px;
+  }
 
   @media (max-width: 816px) {
     width: 512px;
