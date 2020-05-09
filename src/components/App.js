@@ -2,14 +2,7 @@ import React, { useState } from 'react';
 import Navbar from "./Navbar";
 import Article from "./Article";
 import styled, { ThemeProvider, createGlobalStyle } from 'styled-components';
-
-const articles = [
-  {
-    title: "How to flat array",
-    text: "example text",
-    example: "const flatArray = arr => arr.reduce((a, c) => c instanceof Array ? a.concat(flatArray(c)) : [...a, c], []);"
-  }
-]
+import articles from "../articles";
 
 const themes = {
   white: {

@@ -43,7 +43,7 @@ const Example = styled.pre`
 export default ({ title, text, example }) => (
     <ArticleWrapper>
         <Title>{title}</Title>
-        <Text>{text}</Text>
+        {text.length ? (<Text>{text}</Text>) : null}
         <Example>{example}</Example>
     </ArticleWrapper>
 )
