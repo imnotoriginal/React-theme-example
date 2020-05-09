@@ -44,10 +44,6 @@ const GlobalStyle = createGlobalStyle`
 const Container = styled.main`
   width: 920px;
   margin: 24px auto;
-  border-radius: 4px;
-  padding: 8px 24px;
-  font-family: sans-serif;
-  background-color: ${props => props.theme.background};
 
   @media (max-width: 968px) {
     width: 768px;

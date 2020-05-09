@@ -3,12 +3,15 @@ import styled from "styled-components";
 
 const ArticleWrapper = styled.div`
     color: ${props => props.theme.primary};
-    padding-bottom: 24px;
+    background-color: ${props => props.theme.background};
+    border-radius: 4px;
+    padding: 8px 24px;
+    margin-bottom: 24px;
 `;
 
 const Title = styled.h2`
     margin: 0;
-    padding: 24px 0;
+    padding: 20px 0;
 `;
 
 const Text = styled.p`
@@ -20,6 +23,7 @@ const Text = styled.p`
 
 const Example = styled.pre`
     padding: 12px;
+    margin: 0 0 12px;
     border-radius: 4px;
     background-color: ${props => props.theme.secondary};
     overflow-y: auto;
